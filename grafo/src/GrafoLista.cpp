@@ -4,18 +4,18 @@
 #include <iostream>
 using namespace std;
 
-GrafoLista::GrafoLista(int v){
-    numeroDeVertices=v;
+GrafoLista::GrafoLista(int vertices){
+    numeroDeVertices=vertices;
     listaAdjacente = new list<int>[numeroDeVertices];
 }
 
 GrafoLista::~GrafoLista(){
 }
 
-void GrafoLista::adicionaAresta(int v1, inte v2){
-    listaAdjacente[v1].push_back(v2);
+void GrafoLista::adicionaAresta(int src, int dest){
+    listaAdjacente[src].push_front(dest);
 }
-void GrafoLista::removeAresta(int v1, int v2){
-    listaAdjacente[v1]=NULL;
-    listaAdjacente[v2].push_back(NULL);
+void GrafoLista::removeAresta(int src, int dest){
+    listaAdjacente[src]=NULL;
+    listaAdjacente[dest].push_back(NULL);
 }

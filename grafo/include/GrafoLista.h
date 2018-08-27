@@ -5,11 +5,11 @@
 class GrafoLista
 {
     public:
-        GrafoLista(int v);
+        GrafoLista(int vertices);
         ~GrafoLista();
-        void adicionaAresta(int v1, int v2);
-        void removeAresta(int v1, int v2);
-        bool saoVizinhos(int v1, int v2);
+        void adicionaAresta(int src, int dest);
+        void removeAresta(int src, int dest);
+        bool saoVizinhos(int src, int dest);
 
 
 
