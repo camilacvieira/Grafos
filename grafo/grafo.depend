@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1535394927 source:c:\users\alorya\documents\aulas lab\grafo\graf\grafo\src\grafomatriz.cpp
+	"GrafoMatriz.h"
+	<iostream>
+
+1535394939 c:\users\alorya\documents\aulas lab\grafo\graf\grafo\include\grafomatriz.h
+
+1535398979 source:c:\users\alorya\documents\aulas lab\grafo\graf\grafo\main.cpp
+	<iostream>
+	"GrafoMatriz.h"
+	<list>
+	<algorithm>
+
